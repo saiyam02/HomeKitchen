@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Squada One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <title>
+            Josh Assignment
+        </title>
+    </head>
+    <body>
+        <div class="top-container">
+
+            <div class="header">
+                <div class="resName">JTGeats</div>
+                <div class="home navItem-font">Home</div>
+                <div class ="about navItem-font">About</div>
+                <div class ="menu navItem-font">Menu</div>
+                <div class ="blog navItem-font">Blog</div>
+                <div class ="contact navItem-font">Contact</div>
+                <div class="search-btn">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                
+                <div class = "cart-btn-container" id="cart-btn">
+                    <div class="ellipse"></div>
+                    <img src="Icons/Cart.svg">
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <div class="cart-modal"></div>
+                    <div class="modal-text">Cart is Empty
+                        <div class="small-txt-modal">Add some items to the cart to checkout</div>
+                    </div>
+                    <button class="close-btn" id="close-btn">Back to Menu</button>
+                </div>
+            </div>
+            <div class="landing">
+                <div class="hero-display">
+                    <div class="display-text">Authentic Home food in India</div>
+                    <div class="display-text-small">JTGeats is a courier service in which authentic home cook food is delivered to a customer.</div>
+                    <div class="search-food">
+                        <div class="input-field-container">
+                            <input type="text" class="input-field" placeholder="Search food you love" style="width: 80%; height: 70%;border: none; border-bottom-left-radius: 10px; border-top-left-radius: 10px;" >
+                        </div>
+                        <div class="input-submit"><button class="text-search-btn" type="button" >search</button></div>
+                    </div>
+                </div>
+                <div class="cooking-pic-container">
+                </div>
+            </div>
+        </div>
+        <div class="kitchen">
+            <div class="food-items">
+                <div class="kitchen-heading">Home Kitchen</div>
+                <div class="items-container">
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_MqT0asuoIcU.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Veggie pizza</div>
+                                <div class="item-price">₹190</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">50-79</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_UxRhrU8fPHQ.png" height="100%" width="100%"></div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Tomato pizza</div>
+                                <div class="item-price">₹123</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.1</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">25-39</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_CbNAuxSZTFo.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">20%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Margherita pizza</div>
+                                <div class="item-price">₹130</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.5</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">20-29</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_Y6OgisiGBjM.png" height="100%" width="100%"></div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Corn Pizza</div>
+                                <div class="item-price">₹110</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">15-29</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-container-2">
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_nP11TkjxJ7s.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Onion Pizza</div>
+                                <div class="item-price">₹140</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">29-44</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_60nzTP7_hMQ.png" height="100%" width="100%"></div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Capsicum pizza</div>
+                                <div class="item-price">₹190</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.2</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">15-29</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_sejqj6Eaqe8.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">20%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Tandoori pizza</div>
+                                <div class="item-price">₹210</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">50-79</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_33GPuoFI7v8.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Farmhouse pizza</div>
+                                <div class="item-price">₹190</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">50-79</div>
+                                        <div class="min">min</div>
+                                    </div>    
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-container-3">
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_MqT0asuoIcU.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Herby pizza</div>
+                                <div class="item-price">₹170</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">39-59</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_UxRhrU8fPHQ.png" height="100%" width="100%"></div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">spicy pizza</div>
+                                <div class="item-price">₹123</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.2</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">40-59</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_CbNAuxSZTFo.png" height="100%" width="100%"></div>
+                            <div class="disc-tag"></div>
+                            <div class="disc-tag-inner">20%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Delux pizza</div>
+                                <div class="item-price">₹210</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.5</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">30-49</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item-image">
+                            <div class="img-container"><img src="Images\unsplash_Y6OgisiGBjM.png" height="100%" width="100%"></div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name">Peppy pizza</div>
+                                <div class="item-price">₹150</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating">4.9</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time">50-79</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-items">Popular Items
+                <div class="cards-container" style="overflow: hidden;">
+                    <div class="left-arrow" id="left-arrow-btn"></div>
+                    <!-- slide-1 -->
+                    <div class="items slider" style="margin-left: 4.37%;">
+                        <div class="item-image">
+                            <div class="img-container"  id="img-container-0"><img id="img-0" src="Images\unsplash_MqT0asuoIcU.png" height="100%" width="100%"></div>
+                            <div class="disc-tag" id="disc-tag-0" style="display: none;"></div>
+                            <div class="disc-tag-inner" id="disc-tag-inner-0" style="display: none;">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name" id="item-name-0">Veggie pizza</div>
+                                <div class="item-price" id="item-price-0">₹190</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating" id="rating-0">4.7</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time" id="time-0">50-79</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item" id="add-normal-0" style="display: none;"></div>
+                                <div class="add-minus" id="add-minus-0">
+                                    <div class="minus"></div>
+                                    <div class="add-1">1</div>
+                                    <div class="add"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="items slider" style="margin-left: 4.37%;">
+                        <div class="item-image">
+                            <div class="img-container" id="img-container-1"><img id="img-1" src="Images\pexels-omar-mahmood-106343 1.png" height="100%" width="100%"></div>
+                            <div class="disc-tag" id="disc-tag-1"></div>
+                            <div class="disc-tag-inner" id="disc-tag-inner-1">20%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name" id="item-name-1">Tandoori Chicken</div>
+                                <div class="item-price" id="item-price-1">₹184</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating" id="rating-1">4.3</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time" id="time-1">15-29</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item" id="add-normal-1" style="display: block;"></div>
+                                <div class="add-minus" id="add-minus-1" style="display: none;">
+                                    <div class="minus"></div>
+                                    <div class="add-1">1</div>
+                                    <div class="add"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="items slider" style="margin-left: 4.37%;">
+                        <div class="item-image">
+                            <div class="img-container" id="img-container-2"><img id="img-2" src="Images\pexels-mumma-oyens-8799602 1.png" height="100%" width="100%"></div>
+                            <div class="disc-tag" id="disc-tag-2"></div>
+                            <div class="disc-tag-inner" id="disc-tag-inner-2">50%</div>
+                        </div>
+                        <div class="item-info">
+                            <div class="name-price-container">
+                                <div class="item-name" id="item-name-2">Chilli Chicken</div>
+                                <div class="item-price" id="item-price-2">₹116</div>
+                            </div>
+                            <div class="other-info-container">
+                                <div class="rating-star">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6121 6.72554L10.0148 6.17806L8.40666 2.7641C8.36274 2.67063 8.29048 2.59496 8.20122 2.54897C7.97736 2.43324 7.70532 2.52968 7.59339 2.7641L5.98528 6.17806L2.38791 6.72554C2.28873 6.74038 2.19805 6.78934 2.12863 6.86352C2.0447 6.95386 1.99845 7.07539 2.00004 7.20142C2.00163 7.32745 2.05094 7.44766 2.13713 7.53563L4.73987 10.1929L4.12496 13.9452C4.11054 14.0324 4.11976 14.1222 4.15159 14.2043C4.18341 14.2864 4.23655 14.3575 4.305 14.4095C4.37344 14.4616 4.45444 14.4925 4.53882 14.4988C4.6232 14.5051 4.70757 14.4865 4.78238 14.4452L8.00003 12.6736L11.2177 14.4452C11.3055 14.4941 11.4075 14.5104 11.5053 14.4926C11.7518 14.4481 11.9176 14.2033 11.8751 13.9452L11.2602 10.1929L13.8629 7.53563C13.9338 7.46293 13.9805 7.36798 13.9947 7.26412C14.033 7.00447 13.8601 6.76412 13.6121 6.72554V6.72554Z" fill="#1B1C21"/>
+                                    </svg>
+                                    <div class="rating" id="rating-2">4.1</div>
+                                </div>
+                                <div class="time-container">
+                                    <div class="time-container-inner">
+                                        <div class="time" id="time-2">30-40</div>
+                                        <div class="min">min</div>
+                                    </div>
+                                </div>
+                                <div class="add-item" id="add-normal-2" style="display: block;"></div>
+                                <div class="add-minus" id="add-minus-2" style="display: none;">
+                                    <div class="minus"></div>
+                                    <div class="add-1">1</div>
+                                    <div class="add"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of slide -->
+                    <div class="right-arrow" id="right-arrow-btn"></div>
+                </div>
+                
+            </div>
+            <div class="request-modal" id="request-modal">
+                <div class="request-modal-content">
+                   <div class="request-modal-head">Request a Dish</div>
+                   <div class="modal-input-container">
+                        <div class="modal-input-name">
+                            <div class="name-label">Name*</div>
+                            <input class="name-input" placeholder="Enter name of the dish"></input>
+                        </div>
+                        <div class="modal-input-name">
+                            <div class="name-label" style="top: 105px;">Upload an Image</div>
+                            <input class="name-input" placeholder="Paste a URL" style="top: 129px;"></input>
+                        </div>
+                   </div>
+                   <div class="request-modal-btns">
+                        <div class="cancel-btn" id="cancel-modal">Cancel</div>
+                        <div class="request-submit" id="submit-modal">Submit Request</div>
+                   </div> 
+                </div>
+            </div>
+            <button class="request-btn" id="request-btn">Request a Dish</button>
+        </div>
+        <div class="service-section">
+            <div class="vid-container">
+                <div class="row">
+                    <div class="heading">We are providing best home cooked food delivery service.</div>
+                    <div class="paragraph">Away from home and craving the tasty homemade recipes? 
+                        Choose from a selection of our delicious home cooked dishes 
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="card-item">
+                        <div class="media-bg">
+                            <video id="video" width="100%" height="100%" controls poster="Images\pexels-pixabay-357737.png" style="object-fit: cover;">
+                                <source src="video/mixkit-cutting-through-a-fresh-pizza-20913-medium.mp4" style="margin: 0" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="play" id="play-vid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="cover"></div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <div class="contact-outer-container">
+                <div class="contact-inner-container">
+                    <div class="text-container"> 
+                        <div class="main-txt">Do you have a question or want to become a seller?</div>
+                        <div class="small-txt">Fill this form and our manager will contact you next 48 hours.</div>
+                    </div>
+                    <div class="contact-box">
+                        <div class="input-container-1">
+                            <input type="text" class="input-1" placeholder="Your Name">
+                            <input type="text" class="input-1" placeholder="Your e-mail" style="left: 50%;">
+                        </div>
+                        <textarea class="input-2" placeholder="Your message"></textarea>
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </div>
+                <div class="delivery-man-img"><img src="Icons/Food_delivery_illustration.svg" height="100%" width="100%"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-menu">
+                <div class="resName-footer">JTGeats</div>
+                <div class="home-foot navItem-font">Home</div>
+                <div class="foot-items navItem-font">About</div>
+                <div class="foot-items navItem-font">Menu</div>
+                <div class="foot-items navItem-font">Blog</div>
+                <div class="foot-items navItem-font">Contact</div>
+                <div class="fb-img"><img src="Icons/Facebook.svg"></div> 
+                <div class="insta-img"><img src="Icons/instagram.svg"></div>
+            </div>
+            <div class="line"></div>
+        </div>
+      
+        <script src="index.js"></script>
+    </body>
+</html>
