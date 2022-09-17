@@ -716,7 +716,7 @@ color: #000000;
     width: 92.78%;
     height: 647px;
     background: #F7F8FA;
-    border-radius: 20px;
+    border-radius: 20px
 }  
 
 .request-modal-head{
@@ -796,7 +796,7 @@ color: #9E9E9E;
 .request-modal-btns{
     display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-between;
 align-items: flex-start;
 padding: 0px;
 gap: 30px;
