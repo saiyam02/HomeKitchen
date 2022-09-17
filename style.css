@@ -629,6 +629,7 @@ textarea:focus, input:focus{
     margin: 132.75px 0;
     height: 71.5px;
     width: 6.07%;
+    background-image: url(Icons/left_arrow_hover.svg);
     background-image: url(Icons/left_arrow_normal.svg);
     object-fit: fill;
 }
@@ -643,6 +644,7 @@ textarea:focus, input:focus{
     margin: 132.75px 0 132.75px 4.37%;
     width: 6.07%; 
     height: 71.5px;
+    background-image: url(Icons/right_arrow_hover.svg);
     background-image: url(Icons/right_arrow_normal.svg);
     object-fit: fill;
 }
